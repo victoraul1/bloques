@@ -1,0 +1,130 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Set up a container for the images and buttons */
+.container {
+    display: flex;                  /* Arrange the cards side by side */
+    justify-content: space-around;  /* Add space between the cards */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;              /* Adjust as needed for responsiveness */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style each individual card (image and button) */
+.card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 30%;                 /* Make sure each card takes up 1/3 of the container */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Add a hover effect to make it more interactive */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the images inside each card */
+.card img {
+    width: 100%;                    /* Ensure images take up full width of the card */
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the button within each card */
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect to button for a better UX */
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;    /* Stack cards on top of each other on smaller screens */
+        align-items: stretch;
+    }
+    
+    .card {
+        max-width: 80%;            /* Make each card wider on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for the admin form */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface - Update Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Update Blocks</h1>
+        <form id="updateForm">
+            <!-- Block 1 -->
+            <h2>Block 1</h2>
+            <div class="form-section">
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="image1Url" name="image1Url" placeholder="Enter Image 1 URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="link1Url" name="link1Url" placeholder="Enter Link URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-font"></i>
+                    <input type="text" id="button1Text" name="button1Text" maxlength="15" placeholder="Enter Button 1 Text">
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <h2>Block 2</h2>
+            <div class="form-section">
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="image2Url" name="image2Url" placeholder="Enter Image 2 URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="link2Url" name="link2Url" placeholder="Enter Link URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-font"></i>
+                    <input type="text" id="button2Text" name="button2Text" maxlength="15" placeholder="Enter Button 2 Text">
+                </div>
+            </div>
+
+            <!-- Block 3 -->
+            <h2>Block 3</h2>
+            <div class="form-section">
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="image3Url" name="image3Url" placeholder="Enter Image 3 URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-link"></i>
+                    <input type="text" id="link3Url" name="link3Url" placeholder="Enter Link URL">
+                </div>
+
+                <div class="input-wrapper">
+                    <i class="fas fa-font"></i>
+                    <input type="text" id="button3Text" name="button3Text" maxlength="15" placeholder="Enter Button 3 Text">
+                </div>
+            </div>
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
